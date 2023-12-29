@@ -6,7 +6,7 @@
 
 body {
   display: grid;
-  height: 80vh;
+  height: 100vh;
   background: #2b2b2b;
 }
 
@@ -50,4 +50,21 @@ body {
   left: 160px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
     inset 4px 4px rgba(255, 255, 255, 1), inset -4px 4px rgba(255, 255, 255, 1);
+  background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+}
+
+.checkbox::after {
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 80px;
+  left: 160px;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+
+.checkbox:checked::after {
+  background-color: #f8f8f8;
 }

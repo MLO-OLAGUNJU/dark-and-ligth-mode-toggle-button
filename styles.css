@@ -25,7 +25,7 @@ body {
   transition: 0.5s;
 }
 
-.checkbox::before {
+/* .checkbox::before {
   height: 160px;
   width: 160px;
   position: absolute;
@@ -39,7 +39,7 @@ body {
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
     inset 4px 4px rgba(255, 255, 255, 0.2),
     inset -4px 4px rgba(255, 255, 255, 0.2);
-}
+} */
 
 .checkbox:checked {
   background: #fff;
